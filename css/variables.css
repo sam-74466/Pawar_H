@@ -1,0 +1,62 @@
+/* ===========================
+   PAWAR HARDWARE DESIGN SYSTEM
+=========================== */
+
+:root{
+
+/* Brand */
+
+--primary:#0A4A96;
+--primary-dark:#062E63;
+--primary-light:#2E73C5;
+
+--secondary:#F36A06;
+--secondary-dark:#CF5805;
+--secondary-light:#FF8A2A;
+
+/* Neutral */
+
+--white:#ffffff;
+--light:#F7F9FC;
+--light-2:#EEF3F8;
+--border:#DCE4EE;
+
+--text:#1B2430;
+--text-light:#68768A;
+
+/* Success */
+
+--success:#27AE60;
+
+/* Radius */
+
+--radius-sm:6px;
+--radius:10px;
+--radius-lg:18px;
+--radius-xl:28px;
+
+/* Shadows */
+
+--shadow-sm:0 2px 8px rgba(0,0,0,.06);
+
+--shadow:
+0 8px 30px rgba(10,74,150,.12);
+
+--shadow-lg:
+0 20px 50px rgba(0,0,0,.15);
+
+/* Container */
+
+--container:1320px;
+
+/* Fonts */
+
+--heading:'Oswald',sans-serif;
+
+--body:'Inter',sans-serif;
+
+/* Animation */
+
+--transition:.3s ease;
+
+}
