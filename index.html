@@ -2,26 +2,45 @@
 <html lang="en">
 
 <head>
+<!-- Favicons -->
+<link rel="icon" href="assets/logo/favicon.ico" type="image/x-icon">
 
+<link rel="icon" type="image/png" sizes="16x16" href="assets/logo/favicon-16x16.png">
+
+<link rel="icon" type="image/png" sizes="32x32" href="assets/logo/favicon-32x32.png">
+
+<link rel="apple-touch-icon" sizes="180x180" href="assets/logo/apple-touch-icon.png">
+
+<meta name="theme-color" content="#0F3F7A">
 <meta charset="UTF-8">
 
-<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Pawar Hardware | Premium Hardware Store | Pune</title>
+<title>Pawar Hardware | Hardware & Building Materials Store</title>
 
-<meta name="description" content="Pawar Hardware - Premium Hardware, Plumbing, Electrical, Paints, Waterproofing & Building Materials in Pune.">
+<meta name="description" content="Pawar Hardware - Your trusted hardware store for construction materials, plumbing, electrical, paints and tools.">
 
-<meta name="keywords" content="Hardware Shop Pune, Plumbing, Power Tools, Building Materials, Pawar Hardware">
+<meta name="keywords" content="Hardware Shop, Plumbing, Electrical, Paints, Building Materials, Power Tools">
 
-<link rel="icon" href="assets/images/logo/favicon.png">
+<meta name="author" content="Pawar Hardware">
+
+<meta name="theme-color" content="#0A3D7C">
+
+<link rel="icon" href="assets/logo/favicon.png">
+
+<!-- Google Fonts -->
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Oswald:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<!-- Font Awesome -->
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+<!-- CSS -->
 
 <link rel="stylesheet" href="css/variables.css">
 
@@ -29,27 +48,49 @@
 
 <link rel="stylesheet" href="css/responsive.css">
 
+<link rel="stylesheet" href="css/animations.css">
+
 </head>
 
 <body>
 
-<!--==========================
+<!-- Loader -->
+
+<div class="loader"></div>
+
+<!-- Scroll Progress -->
+
+<div class="scroll-progress"></div>
+
+<!-- =====================================
 TOP BAR
-===========================-->
+===================================== -->
 
 <div class="topbar">
 
 <div class="container">
 
-<div>
+<div class="topbar-left">
+
+<span>
 
 <i class="fa-solid fa-location-dot"></i>
 
 Nanded Gaon, Shivne Link Road, Pune
 
+</span>
+
+<span>
+
+<i class="fa-solid fa-clock"></i>
+
+Mon - Sun | 8:00 AM - 9:00 PM
+
+</span>
+
 </div>
 
-<div class="tb-right">
+<div class="topbar-right">
 
 <a href="tel:+919226948412">
 
@@ -63,7 +104,7 @@ Nanded Gaon, Shivne Link Road, Pune
 
 <i class="fa-solid fa-envelope"></i>
 
-pawarwaterproofing86@gmail.com
+Email Us
 
 </a>
 
@@ -73,65 +114,71 @@ pawarwaterproofing86@gmail.com
 
 </div>
 
-<!--==========================
+<!-- =====================================
 HEADER
-===========================-->
+===================================== -->
 
-<header class="site">
+<header class="site-header">
 
-<div class="container nav-wrap">
+<div class="container">
 
-<a href="index.html" class="brand">
+<div class="navbar">
 
-<img src="assets/images/logo/pawar-logo.png" alt="Pawar Hardware">
+<a href="index.html" class="logo">
 
-<div class="brand-text">
+<img src="assets/logo/pawar-logo.png" alt="Pawar Hardware">
 
-<b>PAWAR</b>
+<div class="logo-text">
 
-<span>HARDWARE</span>
+<h3>PAWAR</h3>
+
+<span>HARDWARE STORE</span>
 
 </div>
 
 </a>
 
-<nav class="nav-links">
+<nav>
 
-<a class="active" href="index.html">Home</a>
+<ul class="nav-links">
 
-<a href="products.html">Products</a>
+<li><a class="active" href="index.html">Home</a></li>
 
-<a href="categories.html">Categories</a>
+<li><a href="products.html">Products</a></li>
 
-<a href="brands.html">Brands</a>
+<li><a href="categories.html">Categories</a></li>
 
-<a href="services.html">Services</a>
+<li><a href="brands.html">Brands</a></li>
 
-<a href="gallery.html">Gallery</a>
+<li><a href="services.html">Services</a></li>
 
-<a href="about.html">About</a>
+<li><a href="gallery.html">Gallery</a></li>
 
-<a href="contact.html">Contact</a>
+<li><a href="about.html">About</a></li>
+
+<li><a href="contact.html">Contact</a></li>
+
+</ul>
 
 </nav>
 
-<div class="nav-cta">
+<div class="nav-action">
 
-<a class="btn btn-primary" href="contact.html">
+<a href="tel:+919226948412" class="call-btn">
 
-Get Quote
+<i class="fa-solid fa-phone"></i>
+
+Call Now
 
 </a>
 
-<button class="nav-toggle">
+<div class="menu-toggle">
 
-<span></span>
+<i class="fa-solid fa-bars"></i>
 
-<span></span>
+</div>
 
-<span></span>
-
-</button>
+</div>
 
 </div>
 
@@ -139,47 +186,88 @@ Get Quote
 
 </header>
 
-<!--==========================
+<!-- =====================================
+MOBILE MENU
+===================================== -->
+
+<div class="menu-overlay"></div>
+
+<div class="mobile-menu">
+
+<div class="close-menu">
+
+<i class="fa-solid fa-xmark"></i>
+
+</div>
+
+<ul>
+
+<li><a href="index.html">Home</a></li>
+
+<li><a href="products.html">Products</a></li>
+
+<li><a href="categories.html">Categories</a></li>
+
+<li><a href="brands.html">Brands</a></li>
+
+<li><a href="services.html">Services</a></li>
+
+<li><a href="gallery.html">Gallery</a></li>
+
+<li><a href="about.html">About</a></li>
+
+<li><a href="contact.html">Contact</a></li>
+
+</ul>
+
+</div>
+
+<!-- =====================================
 HERO
-===========================-->
+===================================== -->
 
 <section class="hero">
 
-<div class="container hero-grid">
+<div class="container">
 
-<div>
+<div class="hero-content fade-left">
 
-<div class="hero-small">
+<div class="hero-badge">
 
-PREMIUM HARDWARE STORE
+<i class="fa-solid fa-award"></i>
+
+Trusted Hardware Supplier
 
 </div>
 
 <h1>
 
-YOUR ONE STOP
+Your Trusted
 
-<span>HARDWARE</span>
+<span>Hardware Partner</span>
 
-DESTINATION
+For Every Project
 
 </h1>
 
 <p>
 
-From construction materials to premium tools, plumbing, electrical, paints and waterproofing products, Pawar Hardware supplies everything required to build stronger, smarter and better.
+Pawar Hardware provides premium quality hardware products,
+plumbing materials, electrical items, paints,
+construction chemicals and trusted brands for
+homes, contractors and businesses.
 
 </p>
 
 <div class="hero-buttons">
 
-<a class="btn btn-primary" href="products.html">
+<a href="products.html" class="btn btn-primary">
 
 Explore Products
 
 </a>
 
-<a class="btn btn-outline" href="contact.html">
+<a href="contact.html" class="btn btn-outline">
 
 Contact Us
 
@@ -190,10 +278,8 @@ Contact Us
 <div class="hero-search">
 
 <input
-
 type="text"
-
-placeholder="Search Hardware Products...">
+placeholder="Search products...">
 
 <button>
 
@@ -205,55 +291,64 @@ Search
 
 </div>
 
+<div class="hero-stats">
+
+<div class="hero-stat">
+
+<h2 data-counter="500">0</h2>
+
+<p>Products</p>
+
 </div>
 
-<div class="hero-image">
+<div class="hero-stat">
 
-<img
+<h2 data-counter="25">0</h2>
 
-src="assets/images/banners/hero.png"
+<p>Brands</p>
 
-alt="Hardware Hero">
+</div>
 
-<div class="float-card card-1">
+<div class="hero-stat">
+
+<h2 data-counter="1000">0</h2>
+
+<p>Customers</p>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="hero-image fade-right">
+
+<img src="assets/hero/hero-tools.png"
+alt="Hardware Tools">
+
+<div class="float-card card-top">
 
 <i class="fa-solid fa-screwdriver-wrench"></i>
 
 <div>
 
-<h4>
+<h4>Premium Quality</h4>
 
-1200+ Products
-
-</h4>
-
-<span>
-
-In Stock
-
-</span>
+<span>Trusted Products</span>
 
 </div>
 
 </div>
 
-<div class="float-card card-2">
+<div class="float-card card-bottom">
 
 <i class="fa-solid fa-truck-fast"></i>
 
 <div>
 
-<h4>
+<h4>Bulk Supply</h4>
 
-Fast Delivery
-
-</h4>
-
-<span>
-
-Across Pune
-
-</span>
+<span>Fast Delivery</span>
 
 </div>
 
@@ -265,52 +360,31 @@ Across Pune
 
 <div class="scroll-down">
 
-<i class="fa-solid fa-angles-down"></i>
+Scroll
+
+<span></span>
 
 </div>
 
 </section>
+<!-- =====================================================
+FEATURED CATEGORIES
+====================================================== -->
 
-<!--==========================
-TRUSTED BRANDS
-===========================-->
-
-<section class="brand-strip">
-
-<div class="container">
-
-<img src="assets/images/brands/bosch.png">
-
-<img src="assets/images/brands/asian-paints.png">
-
-<img src="assets/images/brands/stanley.png">
-
-<img src="assets/images/brands/astral.png">
-
-<img src="assets/images/brands/supreme.png">
-
-<img src="assets/images/brands/dr-fixit.png">
-
-</div>
-
-</section>
-<!--=====================================
-SHOP BY CATEGORY
-======================================-->
-
-<section class="gray-section">
+<section class="categories">
 
 <div class="container">
 
-<div class="section-title">
+<div class="section-title fade-up">
 
-<span>SHOP BY CATEGORY</span>
+<span>OUR CATEGORIES</span>
 
 <h2>Everything You Need Under One Roof</h2>
 
 <p>
 
-Browse our complete range of premium hardware and construction products.
+From home repairs to large construction projects,
+Pawar Hardware supplies quality products from trusted brands.
 
 </p>
 
@@ -318,99 +392,139 @@ Browse our complete range of premium hardware and construction products.
 
 <div class="category-grid">
 
-<div class="category-card">
+<div class="category-card fade-up">
 
-<img src="assets/images/categories/power-tools.png" alt="Power Tools">
+<div class="category-image">
+
+<img src="assets/categories/power-tools.jpg" alt="Power Tools">
+
+<div class="category-overlay"></div>
+
+</div>
+
+<div class="category-content">
+
+<div class="category-icon">
+
+<i class="fa-solid fa-screwdriver-wrench"></i>
+
+</div>
 
 <h3>Power Tools</h3>
 
-<p>Bosch, Stanley, Makita & More</p>
+<p>Professional drilling, cutting and grinding equipment.</p>
 
-<a href="categories.html">Explore →</a>
+<a href="categories.html" class="category-link">
+
+Explore
+
+<i class="fa-solid fa-arrow-right"></i>
+
+</a>
 
 </div>
 
-<div class="category-card">
+</div>
 
-<img src="assets/images/categories/plumbing.png" alt="Plumbing">
+<div class="category-card fade-up delay-2">
+
+<div class="category-image">
+
+<img src="assets/categories/plumbing.jpg" alt="Plumbing">
+
+<div class="category-overlay"></div>
+
+</div>
+
+<div class="category-content">
+
+<div class="category-icon">
+
+<i class="fa-solid fa-faucet-drip"></i>
+
+</div>
 
 <h3>Plumbing</h3>
 
-<p>Pipes, Valves, Taps & Fittings</p>
+<p>Pipes, fittings, valves, tanks and sanitary products.</p>
 
-<a href="categories.html">Explore →</a>
+<a href="categories.html" class="category-link">
+
+Explore
+
+<i class="fa-solid fa-arrow-right"></i>
+
+</a>
 
 </div>
 
-<div class="category-card">
+</div>
 
-<img src="assets/images/categories/electrical.png" alt="Electrical">
+<div class="category-card fade-up delay-3">
+
+<div class="category-image">
+
+<img src="assets/categories/electrical.jpg" alt="Electrical">
+
+<div class="category-overlay"></div>
+
+</div>
+
+<div class="category-content">
+
+<div class="category-icon">
+
+<i class="fa-solid fa-bolt"></i>
+
+</div>
 
 <h3>Electrical</h3>
 
-<p>Switches, Wires & MCB</p>
+<p>Switches, wires, MCBs, lights and accessories.</p>
 
-<a href="categories.html">Explore →</a>
+<a href="categories.html" class="category-link">
 
-</div>
+Explore
 
-<div class="category-card">
+<i class="fa-solid fa-arrow-right"></i>
 
-<img src="assets/images/categories/paints.png" alt="Paints">
-
-<h3>Paints</h3>
-
-<p>Asian Paints, Berger & More</p>
-
-<a href="categories.html">Explore →</a>
+</a>
 
 </div>
 
-<div class="category-card">
+</div>
 
-<img src="assets/images/categories/fasteners.png" alt="Fasteners">
+<div class="category-card fade-up delay-4">
 
-<h3>Fasteners</h3>
+<div class="category-image">
 
-<p>Nuts, Bolts & Screws</p>
+<img src="assets/categories/paint.jpg" alt="Paint">
 
-<a href="categories.html">Explore →</a>
+<div class="category-overlay"></div>
 
 </div>
 
-<div class="category-card">
+<div class="category-content">
 
-<img src="assets/images/categories/sanitary.png" alt="Sanitary">
+<div class="category-icon">
 
-<h3>Sanitary</h3>
-
-<p>Bathroom Accessories</p>
-
-<a href="categories.html">Explore →</a>
+<i class="fa-solid fa-paint-roller"></i>
 
 </div>
 
-<div class="category-card">
+<h3>Paints & Chemicals</h3>
 
-<img src="assets/images/categories/waterproofing.png" alt="Waterproofing">
+<p>Interior, exterior paints and waterproofing products.</p>
 
-<h3>Waterproofing</h3>
+<a href="categories.html" class="category-link">
 
-<p>Sealants & Chemicals</p>
+Explore
 
-<a href="categories.html">Explore →</a>
+<i class="fa-solid fa-arrow-right"></i>
+
+</a>
 
 </div>
-
-<div class="category-card">
-
-<img src="assets/images/categories/hand-tools.png" alt="Hand Tools">
-
-<h3>Hand Tools</h3>
-
-<p>Professional Quality Tools</p>
-
-<a href="categories.html">Explore →</a>
 
 </div>
 
@@ -420,232 +534,35 @@ Browse our complete range of premium hardware and construction products.
 
 </section>
 
-
-<!--=====================================
+<!-- =====================================================
 FEATURED PRODUCTS
-======================================-->
+====================================================== -->
 
-<section class="white-section">
+<section class="products">
 
 <div class="container">
 
-<div class="section-title">
+<div class="section-title fade-up">
 
 <span>FEATURED PRODUCTS</span>
 
-<h2>Best Selling Products</h2>
+<h2>Popular Products</h2>
 
 <p>
 
-Trusted by homeowners, builders and contractors.
+Browse our latest hardware products from premium brands.
 
 </p>
 
 </div>
 
-<div class="product-grid">
+<div class="product-grid" data-product-render>
 
-<div class="product-card">
-
-<div class="product-image">
-
-<span class="sale-tag">BEST SELLER</span>
-
-<img src="assets/images/products/drill.png" alt="Drill">
+<!-- Products load automatically from products.json -->
 
 </div>
 
-<div class="product-body">
-
-<div class="product-category">
-
-POWER TOOLS
-
-</div>
-
-<h3 class="product-title">
-
-Bosch Rotary Hammer Drill
-
-</h3>
-
-<div class="product-price">
-
-₹7,999
-
-<del>₹8,999</del>
-
-</div>
-
-<div class="product-buttons">
-
-<a href="product-details.html" class="btn btn-primary">
-
-View
-
-</a>
-
-<a href="contact.html" class="btn btn-outline">
-
-Enquiry
-
-</a>
-
-</div>
-
-</div>
-
-</div>
-
-<div class="product-card">
-
-<div class="product-image">
-
-<img src="assets/images/products/paint.png">
-
-</div>
-
-<div class="product-body">
-
-<div class="product-category">
-
-PAINTS
-
-</div>
-
-<h3 class="product-title">
-
-Asian Paints Apex Exterior
-
-</h3>
-
-<div class="product-price">
-
-₹2,350
-
-</div>
-
-<div class="product-buttons">
-
-<a href="product-details.html" class="btn btn-primary">
-
-View
-
-</a>
-
-<a href="contact.html" class="btn btn-outline">
-
-Enquiry
-
-</a>
-
-</div>
-
-</div>
-
-</div>
-
-<div class="product-card">
-
-<div class="product-image">
-
-<img src="assets/images/products/pipe.png">
-
-</div>
-
-<div class="product-body">
-
-<div class="product-category">
-
-PLUMBING
-
-</div>
-
-<h3 class="product-title">
-
-Astral CPVC Pipe
-
-</h3>
-
-<div class="product-price">
-
-₹420
-
-</div>
-
-<div class="product-buttons">
-
-<a href="product-details.html" class="btn btn-primary">
-
-View
-
-</a>
-
-<a href="contact.html" class="btn btn-outline">
-
-Enquiry
-
-</a>
-
-</div>
-
-</div>
-
-</div>
-
-<div class="product-card">
-
-<div class="product-image">
-
-<span class="sale-tag">NEW</span>
-
-<img src="assets/images/products/grinder.png">
-
-</div>
-
-<div class="product-body">
-
-<div class="product-category">
-
-POWER TOOLS
-
-</div>
-
-<h3 class="product-title">
-
-Angle Grinder
-
-</h3>
-
-<div class="product-price">
-
-₹3,999
-
-</div>
-
-<div class="product-buttons">
-
-<a href="product-details.html" class="btn btn-primary">
-
-View
-
-</a>
-
-<a href="contact.html" class="btn btn-outline">
-
-Enquiry
-
-</a>
-
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-<div style="text-align:center;margin-top:50px;">
+<div class="text-center mt-50">
 
 <a href="products.html" class="btn btn-primary">
 
@@ -658,109 +575,74 @@ View Complete Catalogue
 </div>
 
 </section>
-<!--=====================================
-WHY CHOOSE US
-======================================-->
 
-<section class="gray-section">
+<!-- =====================================================
+WHY CHOOSE PAWAR
+====================================================== -->
+
+<section class="features">
 
 <div class="container">
 
-<div class="section-title">
+<div class="section-title fade-up">
 
-<span>WHY PAWAR HARDWARE</span>
+<span>WHY CHOOSE US</span>
 
-<h2>More Than A Hardware Store</h2>
-
-<p>
-
-Providing quality products, trusted brands and expert guidance for every construction project.
-
-</p>
+<h2>Trusted By Homeowners & Contractors</h2>
 
 </div>
 
 <div class="feature-grid">
 
-<div class="feature-card">
+<div class="feature-card fade-up">
 
-<i class="fa-solid fa-box-open"></i>
+<div class="feature-icon">
 
-<h3>1200+ Products</h3>
+<i class="fa-solid fa-medal"></i>
+
+</div>
+
+<h3>Quality Products</h3>
 
 <p>
 
-Everything from screws to heavy-duty power tools available under one roof.
+Only genuine products from trusted brands.
 
 </p>
 
 </div>
 
-<div class="feature-card">
+<div class="feature-card fade-up delay-2">
 
-<i class="fa-solid fa-award"></i>
+<div class="feature-icon">
 
-<h3>Trusted Brands</h3>
+<i class="fa-solid fa-headset"></i>
+
+</div>
+
+<h3>Expert Guidance</h3>
 
 <p>
 
-Bosch, Stanley, Asian Paints, Astral, Supreme, Dr. Fixit and many more.
+Our experienced team helps you choose the right materials.
 
 </p>
 
 </div>
 
-<div class="feature-card">
+<div class="feature-card fade-up delay-3">
 
-<i class="fa-solid fa-user-gear"></i>
-
-<h3>Expert Advice</h3>
-
-<p>
-
-Get the right product recommendation for your project from experienced staff.
-
-</p>
-
-</div>
-
-<div class="feature-card">
+<div class="feature-icon">
 
 <i class="fa-solid fa-truck-fast"></i>
 
-<h3>Fast Delivery</h3>
-
-<p>
-
-Quick local delivery for contractors, builders and homeowners.
-
-</p>
-
 </div>
 
-<div class="feature-card">
-
-<i class="fa-solid fa-tags"></i>
-
-<h3>Best Prices</h3>
+<h3>Bulk Supply</h3>
 
 <p>
 
-Competitive prices with wholesale rates for bulk purchases.
-
-</p>
-
-</div>
-
-<div class="feature-card">
-
-<i class="fa-solid fa-shield-halved"></i>
-
-<h3>Genuine Products</h3>
-
-<p>
-
-100% original products directly from authorized distributors.
+Fast supply for contractors, builders and businesses.
 
 </p>
 
@@ -772,149 +654,106 @@ Competitive prices with wholesale rates for bulk purchases.
 
 </section>
 
+<!-- =====================================================
+BRANDS
+====================================================== -->
 
-<!--=====================================
-COUNTER
-======================================-->
-
-<section class="counter">
-
-<div class="container">
-
-<div class="counter-grid">
-
-<div class="counter-box">
-
-<h2>15+</h2>
-
-<p>Years Experience</p>
-
-</div>
-
-<div class="counter-box">
-
-<h2>1200+</h2>
-
-<p>Products</p>
-
-</div>
-
-<div class="counter-box">
-
-<h2>5000+</h2>
-
-<p>Happy Customers</p>
-
-</div>
-
-<div class="counter-box">
-
-<h2>35+</h2>
-
-<p>Top Brands</p>
-
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-
-<!--=====================================
-POPULAR BRANDS
-======================================-->
-
-<section class="white-section">
+<section class="brands">
 
 <div class="container">
 
-<div class="section-title">
+<div class="section-title fade-up">
 
-<span>POPULAR BRANDS</span>
+<span>TOP BRANDS</span>
 
 <h2>Brands We Deal In</h2>
 
 <p>
 
-We stock only genuine products from India's leading hardware manufacturers.
+We proudly supply products from India's most trusted manufacturers.
 
 </p>
 
 </div>
 
-<div class="brand-grid">
+<div class="brand-slider">
 
-<div class="brand-card">
+<div class="brand-item"><img src="assets/brands/bosch.png" alt="Bosch"></div>
 
-<img src="assets/images/brands/bosch.png" alt="Bosch">
+<div class="brand-item"><img src="assets/brands/asian-paints.png" alt="Asian Paints"></div>
 
-</div>
+<div class="brand-item"><img src="assets/brands/berger.png" alt="Berger"></div>
 
-<div class="brand-card">
+<div class="brand-item"><img src="assets/brands/astral.png" alt="Astral"></div>
 
-<img src="assets/images/brands/stanley.png" alt="Stanley">
+<div class="brand-item"><img src="assets/brands/supreme.png" alt="Supreme"></div>
 
-</div>
+<div class="brand-item"><img src="assets/brands/jaquar.png" alt="Jaquar"></div>
 
-<div class="brand-card">
+<div class="brand-item"><img src="assets/brands/havells.png" alt="Havells"></div>
 
-<img src="assets/images/brands/asian-paints.png" alt="Asian Paints">
+<div class="brand-item"><img src="assets/brands/taparia.png" alt="Taparia"></div>
 
-</div>
+<div class="brand-item"><img src="assets/brands/finolex.png" alt="Finolex"></div>
 
-<div class="brand-card">
+<div class="brand-item"><img src="assets/brands/dr-fixit.png" alt="Dr Fixit"></div>
 
-<img src="assets/images/brands/astral.png" alt="Astral">
+<!-- Duplicate for seamless loop -->
 
-</div>
+<div class="brand-item"><img src="assets/brands/bosch.png" alt=""></div>
 
-<div class="brand-card">
+<div class="brand-item"><img src="assets/brands/asian-paints.png" alt=""></div>
 
-<img src="assets/images/brands/supreme.png" alt="Supreme">
+<div class="brand-item"><img src="assets/brands/berger.png" alt=""></div>
 
-</div>
+<div class="brand-item"><img src="assets/brands/astral.png" alt=""></div>
 
-<div class="brand-card">
-
-<img src="assets/images/brands/dr-fixit.png" alt="Dr Fixit">
+<div class="brand-item"><img src="assets/brands/supreme.png" alt=""></div>
 
 </div>
 
-<div class="brand-card">
+</div>
 
-<img src="assets/images/brands/finolex.png" alt="Finolex">
+</section>
+<!-- =====================================================
+STATISTICS
+====================================================== -->
+
+<section class="stats">
+
+<div class="container">
+
+<div class="stats-grid">
+
+<div class="stat-card fade-up">
+
+<h2 data-counter="500">0</h2>
+
+<p>Products Available</p>
 
 </div>
 
-<div class="brand-card">
+<div class="stat-card fade-up delay-2">
 
-<img src="assets/images/brands/havells.png" alt="Havells">
+<h2 data-counter="25">0</h2>
 
-</div>
-
-<div class="brand-card">
-
-<img src="assets/images/brands/jaquar.png" alt="Jaquar">
+<p>Trusted Brands</p>
 
 </div>
 
-<div class="brand-card">
+<div class="stat-card fade-up delay-3">
 
-<img src="assets/images/brands/crompton.png" alt="Crompton">
+<h2 data-counter="1000">0</h2>
 
-</div>
-
-<div class="brand-card">
-
-<img src="assets/images/brands/taparia.png" alt="Taparia">
+<p>Happy Customers</p>
 
 </div>
 
-<div class="brand-card">
+<div class="stat-card fade-up delay-4">
 
-<img src="assets/images/brands/berger.png" alt="Berger">
+<h2 data-counter="10">0</h2>
+
+<p>Categories</p>
 
 </div>
 
@@ -924,62 +763,110 @@ We stock only genuine products from India's leading hardware manufacturers.
 
 </section>
 
+<!-- =====================================================
+SERVICES
+====================================================== -->
 
-<!--=====================================
-BUSINESS SEGMENTS
-======================================-->
-
-<section class="gray-section">
+<section class="services">
 
 <div class="container">
 
-<div class="section-title">
+<div class="section-title fade-up">
 
-<span>WHO WE SERVE</span>
+<span>OUR SERVICES</span>
 
-<h2>Solutions For Every Customer</h2>
+<h2>More Than Just A Hardware Store</h2>
+
+<p>
+
+We provide complete hardware solutions for homeowners,
+contractors, builders and businesses.
+
+</p>
 
 </div>
 
-<div class="feature-grid">
+<div class="services-grid">
 
-<div class="feature-card">
+<div class="service-card fade-up">
+
+<i class="fa-solid fa-store"></i>
+
+<h3>Retail Sales</h3>
+
+<p>
+
+Complete range of hardware products under one roof.
+
+</p>
+
+</div>
+
+<div class="service-card fade-up delay-2">
+
+<i class="fa-solid fa-truck-fast"></i>
+
+<h3>Bulk Supply</h3>
+
+<p>
+
+Special pricing and fast delivery for contractors.
+
+</p>
+
+</div>
+
+<div class="service-card fade-up delay-3">
+
+<i class="fa-solid fa-comments"></i>
+
+<h3>Product Guidance</h3>
+
+<p>
+
+Expert recommendations for every project.
+
+</p>
+
+</div>
+
+<div class="service-card fade-up">
 
 <i class="fa-solid fa-house"></i>
 
-<h3>Homeowners</h3>
+<h3>Home Improvement</h3>
 
 <p>
 
-Quality materials for repairs, renovations and new homes.
+Everything needed for renovation and repairs.
 
 </p>
 
 </div>
 
-<div class="feature-card">
+<div class="service-card fade-up delay-2">
 
 <i class="fa-solid fa-building"></i>
 
-<h3>Builders</h3>
+<h3>Construction Supply</h3>
 
 <p>
 
-Bulk supply of construction materials and hardware.
+Reliable construction materials and accessories.
 
 </p>
 
 </div>
 
-<div class="feature-card">
+<div class="service-card fade-up delay-3">
 
-<i class="fa-solid fa-helmet-safety"></i>
+<i class="fa-solid fa-handshake"></i>
 
-<h3>Contractors</h3>
+<h3>Business Support</h3>
 
 <p>
 
-Professional tools and dependable project supplies.
+Long-term support for builders and businesses.
 
 </p>
 
@@ -990,31 +877,114 @@ Professional tools and dependable project supplies.
 </div>
 
 </section>
-<!--=====================================
-CUSTOMER TESTIMONIALS
-======================================-->
 
-<section class="white-section">
+<!-- =====================================================
+GALLERY
+====================================================== -->
+
+<section class="gallery">
 
 <div class="container">
 
-<div class="section-title">
+<div class="section-title fade-up">
+
+<span>OUR GALLERY</span>
+
+<h2>Inside Pawar Hardware</h2>
+
+<p>
+
+Take a look at our showroom, products and customer projects.
+
+</p>
+
+</div>
+
+<div class="gallery-grid">
+
+<div class="gallery-item fade-up">
+
+<img src="assets/gallery/gallery1.jpg" alt="Gallery">
+
+<div class="gallery-overlay">
+
+<i class="fa-solid fa-expand"></i>
+
+</div>
+
+</div>
+
+<div class="gallery-item fade-up delay-2">
+
+<img src="assets/gallery/gallery2.jpg" alt="Gallery">
+
+<div class="gallery-overlay">
+
+<i class="fa-solid fa-expand"></i>
+
+</div>
+
+</div>
+
+<div class="gallery-item fade-up delay-3">
+
+<img src="assets/gallery/gallery3.jpg" alt="Gallery">
+
+<div class="gallery-overlay">
+
+<i class="fa-solid fa-expand"></i>
+
+</div>
+
+</div>
+
+<div class="gallery-item fade-up delay-4">
+
+<img src="assets/gallery/gallery4.jpg" alt="Gallery">
+
+<div class="gallery-overlay">
+
+<i class="fa-solid fa-expand"></i>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="text-center mt-50">
+
+<a href="gallery.html" class="btn btn-primary">
+
+View Full Gallery
+
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- =====================================================
+TESTIMONIALS
+====================================================== -->
+
+<section class="testimonials">
+
+<div class="container">
+
+<div class="section-title fade-up">
 
 <span>TESTIMONIALS</span>
 
 <h2>What Our Customers Say</h2>
 
-<p>
-
-Thousands of homeowners, builders and contractors trust Pawar Hardware for quality products and reliable service.
-
-</p>
-
 </div>
 
 <div class="testimonial-grid">
 
-<div class="testimonial-card">
+<div class="testimonial-card fade-up">
 
 <div class="quote">"</div>
 
@@ -1026,81 +996,18 @@ Thousands of homeowners, builders and contractors trust Pawar Hardware for quali
 
 <p>
 
-Excellent collection of hardware products. Genuine brands and very helpful staff. Highly recommended.
+Excellent hardware shop with genuine products and
+very helpful staff. Highly recommended.
 
 </p>
 
 <div class="client">
 
-<img src="assets/images/gallery/customer1.jpg" alt="Customer">
+<img src="assets/gallery/customer1.jpg" alt="Customer">
 
 <div>
 
 <h4>Rahul Patil</h4>
-
-<span>Builder</span>
-
-</div>
-
-</div>
-
-</div>
-
-<div class="testimonial-card">
-
-<div class="quote">"</div>
-
-<div class="stars">
-
-★★★★★
-
-</div>
-
-<p>
-
-Best prices in Pune. I purchased plumbing material for my house and everything was available in one place.
-
-</p>
-
-<div class="client">
-
-<img src="assets/images/gallery/customer2.jpg" alt="Customer">
-
-<div>
-
-<h4>Neha Kulkarni</h4>
-
-<span>Homeowner</span>
-
-</div>
-
-</div>
-
-</div>
-
-<div class="testimonial-card">
-
-<div class="quote">"</div>
-
-<div class="stars">
-
-★★★★★
-
-</div>
-
-<p>
-
-Professional service, fast delivery and quality tools. My first choice for every construction project.
-
-</p>
-
-<div class="client">
-
-<img src="assets/images/gallery/customer3.jpg" alt="Customer">
-
-<div>
-
-<h4>Vijay Shinde</h4>
 
 <span>Contractor</span>
 
@@ -1110,129 +1017,32 @@ Professional service, fast delivery and quality tools. My first choice for every
 
 </div>
 
-</div>
+<div class="testimonial-card fade-up delay-2">
+
+<div class="quote">"</div>
+
+<div class="stars">
+
+★★★★★
 
 </div>
-
-</section>
-
-
-
-<!--=====================================
-PROJECT GALLERY
-======================================-->
-
-<section class="gray-section">
-
-<div class="container">
-
-<div class="section-title">
-
-<span>OUR GALLERY</span>
-
-<h2>Inside Pawar Hardware</h2>
 
 <p>
 
-A glimpse of our showroom, products and customer projects.
+Everything I needed for my house renovation was
+available at one place.
 
 </p>
 
-</div>
+<div class="client">
 
-<div class="gallery-grid">
+<img src="assets/gallery/customer2.jpg" alt="Customer">
 
-<div class="gallery-item">
+<div>
 
-<img src="assets/images/gallery/gallery1.jpg">
+<h4>Priya Joshi</h4>
 
-<div class="gallery-overlay">
-
-<i class="fa-solid fa-plus"></i>
-
-</div>
-
-</div>
-
-<div class="gallery-item">
-
-<img src="assets/images/gallery/gallery2.jpg">
-
-<div class="gallery-overlay">
-
-<i class="fa-solid fa-plus"></i>
-
-</div>
-
-</div>
-
-<div class="gallery-item">
-
-<img src="assets/images/gallery/gallery3.jpg">
-
-<div class="gallery-overlay">
-
-<i class="fa-solid fa-plus"></i>
-
-</div>
-
-</div>
-
-<div class="gallery-item">
-
-<img src="assets/images/gallery/gallery4.jpg">
-
-<div class="gallery-overlay">
-
-<i class="fa-solid fa-plus"></i>
-
-</div>
-
-</div>
-
-<div class="gallery-item">
-
-<img src="assets/images/gallery/gallery5.jpg">
-
-<div class="gallery-overlay">
-
-<i class="fa-solid fa-plus"></i>
-
-</div>
-
-</div>
-
-<div class="gallery-item">
-
-<img src="assets/images/gallery/gallery6.jpg">
-
-<div class="gallery-overlay">
-
-<i class="fa-solid fa-plus"></i>
-
-</div>
-
-</div>
-
-<div class="gallery-item">
-
-<img src="assets/images/gallery/gallery7.jpg">
-
-<div class="gallery-overlay">
-
-<i class="fa-solid fa-plus"></i>
-
-</div>
-
-</div>
-
-<div class="gallery-item">
-
-<img src="assets/images/gallery/gallery8.jpg">
-
-<div class="gallery-overlay">
-
-<i class="fa-solid fa-plus"></i>
+<span>Home Owner</span>
 
 </div>
 
@@ -1240,44 +1050,75 @@ A glimpse of our showroom, products and customer projects.
 
 </div>
 
-<div style="text-align:center;margin-top:50px;">
+<div class="testimonial-card fade-up delay-3">
 
-<a href="gallery.html" class="btn btn-primary">
+<div class="quote">"</div>
 
-View Complete Gallery
+<div class="stars">
 
-</a>
+★★★★★
+
+</div>
+
+<p>
+
+Best service, genuine brands and quick support for
+bulk construction requirements.
+
+</p>
+
+<div class="client">
+
+<img src="assets/gallery/customer3.jpg" alt="Customer">
+
+<div>
+
+<h4>Vikas Shinde</h4>
+
+<span>Builder</span>
+
+</div>
+
+</div>
+
+</div>
 
 </div>
 
 </div>
 
 </section>
-<!--=====================================
+
+<!-- =====================================================
 CALL TO ACTION
-======================================-->
+====================================================== -->
 
 <section class="cta">
 
 <div class="container">
 
-<span class="badge">READY TO BUILD?</span>
+<span class="badge">
+
+Let's Build Together
+
+</span>
 
 <h2>
 
-Your Project Deserves Quality Materials
+Looking For Quality Hardware Products?
 
 </h2>
 
 <p>
 
-Whether you're building a home, renovating a shop, or managing a large construction project, Pawar Hardware has the products and expertise to help.
+Visit Pawar Hardware today for trusted brands,
+expert guidance and reliable service.
 
 </p>
 
 <div class="hero-buttons">
 
-<a href="products.html" class="btn btn-primary">
+<a href="products.html" class="btn btn-white">
 
 Browse Products
 
@@ -1294,122 +1135,92 @@ Contact Us
 </div>
 
 </section>
+<!-- =====================================
+FAQ
+===================================== -->
 
-
-
-<!--=====================================
-CONTACT PREVIEW
-======================================-->
-
-<section class="white-section">
+<section class="faq">
 
 <div class="container">
 
-<div class="section-title">
+<div class="section-title fade-up">
 
-<span>VISIT OUR STORE</span>
+<span>FAQ</span>
 
-<h2>Pawar Hardware</h2>
+<h2>Frequently Asked Questions</h2>
 
 <p>
 
-Visit our showroom or contact us today.
+Find answers to the most common questions about our products and services.
 
 </p>
 
 </div>
 
-<div class="grid-2">
+<div class="faq-item active">
 
-<div>
+<div class="faq-question">
 
-<h3 style="margin-bottom:25px;color:var(--primary);">
+<span>Do you sell genuine branded products?</span>
 
-Store Information
-
-</h3>
-
-<p>
-
-<i class="fa-solid fa-location-dot"></i>
-
-Nanded Gaon,
-
-Shivne Link Road,
-
-Near Mahadev Mandir,
-
-Pune
-
-</p>
-
-<br>
-
-<p>
-
-<i class="fa-solid fa-phone"></i>
-
-9226948412
-
-</p>
-
-<br>
-
-<p>
-
-<i class="fa-solid fa-phone"></i>
-
-8605810586
-
-</p>
-
-<br>
-
-<p>
-
-<i class="fa-solid fa-envelope"></i>
-
-pawarwaterproofing86@gmail.com
-
-</p>
-
-<br>
-
-<p>
-
-<i class="fa-solid fa-clock"></i>
-
-Mon - Sun
-
-8:00 AM - 9:00 PM
-
-</p>
-
-<br>
-
-<a href="contact.html" class="btn btn-primary">
-
-Get Directions
-
-</a>
+<i class="fa-solid fa-chevron-down"></i>
 
 </div>
 
-<div>
+<div class="faq-answer">
 
-<iframe
+<p>
 
-src="https://maps.google.com/maps?q=Pune&t=&z=13&ie=UTF8&iwloc=&output=embed"
+Yes. We supply only genuine products from trusted brands like Bosch,
+Astral, Supreme, Berger, Asian Paints, Havells and many more.
 
-width="100%"
+</p>
 
-height="420"
+</div>
 
-style="border:0;border-radius:20px;"
+</div>
 
-loading="lazy">
+<div class="faq-item">
 
-</iframe>
+<div class="faq-question">
+
+<span>Do you provide bulk orders?</span>
+
+<i class="fa-solid fa-chevron-down"></i>
+
+</div>
+
+<div class="faq-answer">
+
+<p>
+
+Yes, we provide bulk supply for contractors,
+builders and commercial projects.
+
+</p>
+
+</div>
+
+</div>
+
+<div class="faq-item">
+
+<div class="faq-question">
+
+<span>Can I get product guidance?</span>
+
+<i class="fa-solid fa-chevron-down"></i>
+
+</div>
+
+<div class="faq-answer">
+
+<p>
+
+Absolutely. Our experienced team helps you choose
+the right product according to your project.
+
+</p>
 
 </div>
 
@@ -1419,23 +1230,168 @@ loading="lazy">
 
 </section>
 
+<!-- =====================================
+CONTACT
+===================================== -->
 
+<section class="contact">
 
-<!--=====================================
-FOOTER
-======================================-->
+<div class="container">
 
-<footer class="footer">
+<div class="section-title fade-up">
 
-<div class="footer-top">
+<span>CONTACT US</span>
 
-<div class="container footer-grid">
+<h2>Visit Pawar Hardware</h2>
+
+</div>
+
+<div class="contact-wrapper">
+
+<div class="contact-card fade-left">
+
+<div class="contact-info">
+
+<i class="fa-solid fa-location-dot"></i>
 
 <div>
 
-<img
+<h4>Address</h4>
 
-src="assets/images/logo/pawar-logo.png"
+<p>
+
+Near Mahadev Mandir,<br>
+
+Nanded Gaon,<br>
+
+Shivne Link Road,<br>
+
+Pune
+
+</p>
+
+</div>
+
+</div>
+
+<div class="contact-info">
+
+<i class="fa-solid fa-phone"></i>
+
+<div>
+
+<h4>Call</h4>
+
+<p>
+
+9226948412<br>
+
+8605810586
+
+</p>
+
+</div>
+
+</div>
+
+<div class="contact-info">
+
+<i class="fa-solid fa-envelope"></i>
+
+<div>
+
+<h4>Email</h4>
+
+<p>
+
+pawarwaterproofing86@gmail.com
+
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="contact-card fade-right">
+
+<form class="contact-form">
+
+<input type="text" placeholder="Full Name" required>
+
+<input type="tel" placeholder="Mobile Number" required>
+
+<input type="email" placeholder="Email Address">
+
+<select>
+
+<option>Select Requirement</option>
+
+<option>Hardware Products</option>
+
+<option>Construction Material</option>
+
+<option>Plumbing</option>
+
+<option>Electrical</option>
+
+<option>Paints</option>
+
+</select>
+
+<textarea placeholder="Your Message"></textarea>
+
+<button class="btn btn-primary">
+
+Send Enquiry
+
+</button>
+
+</form>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- =====================================
+MAP
+===================================== -->
+
+<section>
+
+<div class="container">
+
+<div class="map rounded shadow">
+
+<iframe
+src="https://maps.google.com/maps?q=Pune&t=&z=13&ie=UTF8&iwloc=&output=embed"
+loading="lazy">
+</iframe>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- =====================================
+FOOTER
+===================================== -->
+
+<footer class="footer">
+
+<div class="container footer-top">
+
+<div class="footer-grid">
+
+<div>
+
+<img src="assets/logo/pawar-logo.png"
 
 class="footer-logo"
 
@@ -1443,35 +1399,21 @@ alt="Pawar Hardware">
 
 <p>
 
-Pawar Hardware supplies premium hardware, plumbing, electrical, paints, waterproofing materials and construction tools across Pune.
+Pawar Hardware is your trusted destination for
+quality hardware, plumbing, electrical,
+construction materials and trusted brands.
 
 </p>
 
 <div class="social">
 
-<a href="#">
+<a href="#"><i class="fab fa-facebook-f"></i></a>
 
-<i class="fab fa-facebook-f"></i>
+<a href="#"><i class="fab fa-instagram"></i></a>
 
-</a>
+<a href="#"><i class="fab fa-whatsapp"></i></a>
 
-<a href="#">
-
-<i class="fab fa-instagram"></i>
-
-</a>
-
-<a href="#">
-
-<i class="fab fa-youtube"></i>
-
-</a>
-
-<a href="#">
-
-<i class="fab fa-whatsapp"></i>
-
-</a>
+<a href="#"><i class="fab fa-youtube"></i></a>
 
 </div>
 
@@ -1479,25 +1421,19 @@ Pawar Hardware supplies premium hardware, plumbing, electrical, paints, waterpro
 
 <div>
 
-<h3>
-
-Quick Links
-
-</h3>
+<h3>Quick Links</h3>
 
 <ul>
 
 <li><a href="index.html">Home</a></li>
 
-<li><a href="about.html">About</a></li>
-
 <li><a href="products.html">Products</a></li>
 
 <li><a href="categories.html">Categories</a></li>
 
-<li><a href="brands.html">Brands</a></li>
-
 <li><a href="gallery.html">Gallery</a></li>
+
+<li><a href="contact.html">Contact</a></li>
 
 </ul>
 
@@ -1505,17 +1441,11 @@ Quick Links
 
 <div>
 
-<h3>
-
-Categories
-
-</h3>
+<h3>Categories</h3>
 
 <ul>
 
 <li><a href="#">Power Tools</a></li>
-
-<li><a href="#">Hand Tools</a></li>
 
 <li><a href="#">Plumbing</a></li>
 
@@ -1523,7 +1453,7 @@ Categories
 
 <li><a href="#">Paints</a></li>
 
-<li><a href="#">Waterproofing</a></li>
+<li><a href="#">Construction</a></li>
 
 </ul>
 
@@ -1531,11 +1461,7 @@ Categories
 
 <div>
 
-<h3>
-
-Contact
-
-</h3>
+<h3>Contact</h3>
 
 <ul class="footer-contact">
 
@@ -1543,15 +1469,7 @@ Contact
 
 <i class="fa-solid fa-location-dot"></i>
 
-<div>
-
-Nanded Gaon,
-
-Shivne Link Road,
-
-Pune
-
-</div>
+<span>Nanded Gaon, Pune</span>
 
 </li>
 
@@ -1559,11 +1477,7 @@ Pune
 
 <i class="fa-solid fa-phone"></i>
 
-<div>
-
-9226948412
-
-</div>
+<span>9226948412</span>
 
 </li>
 
@@ -1571,11 +1485,7 @@ Pune
 
 <i class="fa-solid fa-envelope"></i>
 
-<div>
-
-pawarwaterproofing86@gmail.com
-
-</div>
+<span>pawarwaterproofing86@gmail.com</span>
 
 </li>
 
@@ -1591,9 +1501,11 @@ pawarwaterproofing86@gmail.com
 
 <div class="container">
 
-© 2026 Pawar Hardware.
+<p>
 
-All Rights Reserved.
+© 2026 Pawar Hardware. All Rights Reserved.
+
+</p>
 
 </div>
 
@@ -1601,13 +1513,9 @@ All Rights Reserved.
 
 </footer>
 
-
-
 <!-- Floating Buttons -->
 
-<a
-
-href="https://wa.me/919226948412"
+<a href="https://wa.me/919226948412"
 
 class="whatsapp"
 
@@ -1617,9 +1525,7 @@ target="_blank">
 
 </a>
 
-<a
-
-href="tel:+919226948412"
+<a href="tel:+919226948412"
 
 class="call">
 
@@ -1627,9 +1533,7 @@ class="call">
 
 </a>
 
-<a
-
-href="#"
+<a href="#"
 
 class="back-top">
 
@@ -1637,7 +1541,15 @@ class="back-top">
 
 </a>
 
+<!-- JavaScript -->
+
 <script src="js/main.js"></script>
+
+<script src="js/products.js"></script>
+
+<script src="js/gallery.js"></script>
+
+<script src="js/animations.js"></script>
 
 </body>
 

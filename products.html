@@ -2,90 +2,89 @@
 <html lang="en">
 
 <head>
+<!-- Favicons -->
+<link rel="icon" href="assets/logo/favicon.ico" type="image/x-icon">
 
+<link rel="icon" type="image/png" sizes="16x16" href="assets/logo/favicon-16x16.png">
+
+<link rel="icon" type="image/png" sizes="32x32" href="assets/logo/favicon-32x32.png">
+
+<link rel="apple-touch-icon" sizes="180x180" href="assets/logo/apple-touch-icon.png">
+
+<meta name="theme-color" content="#0F3F7A">
 <meta charset="UTF-8">
 
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
 
 <title>Products | Pawar Hardware</title>
-
-<meta name="description" content="Explore premium hardware products from Pawar Hardware.">
-
-<link rel="icon" href="assets/images/logo/favicon.png">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Oswald:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Oswald:wght@400;600;700&display=swap" rel="stylesheet">
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 
 <link rel="stylesheet" href="css/variables.css">
+
 <link rel="stylesheet" href="css/style.css">
+
 <link rel="stylesheet" href="css/responsive.css">
+
+<link rel="stylesheet" href="css/animations.css">
 
 </head>
 
 <body>
 
-<!-- Header copied from index -->
+<div class="loader"></div>
 
-<header class="site">
+<div class="scroll-progress"></div>
 
-<div class="container nav-wrap">
+<!-- HEADER -->
 
-<a href="index.html" class="brand">
+<header class="site-header sticky">
 
-<img src="assets/images/logo/pawar-logo.png">
+<div class="container">
 
-<div class="brand-text">
+<div class="navbar">
 
-<b>PAWAR</b>
+<a href="index.html" class="logo">
 
-<span>HARDWARE</span>
+<img src="assets/logo/pawar-logo.png" alt="Pawar Hardware">
+
+<div class="logo-text">
+
+<h3>PAWAR</h3>
+
+<span>HARDWARE STORE</span>
 
 </div>
 
 </a>
 
-<nav class="nav-links">
+<nav>
 
-<a href="index.html">Home</a>
+<ul class="nav-links">
 
-<a class="active" href="products.html">Products</a>
+<li><a href="index.html">Home</a></li>
 
-<a href="categories.html">Categories</a>
+<li><a class="active" href="products.html">Products</a></li>
 
-<a href="brands.html">Brands</a>
+<li><a href="categories.html">Categories</a></li>
 
-<a href="gallery.html">Gallery</a>
+<li><a href="brands.html">Brands</a></li>
 
-<a href="services.html">Services</a>
+<li><a href="services.html">Services</a></li>
 
-<a href="about.html">About</a>
+<li><a href="gallery.html">Gallery</a></li>
 
-<a href="contact.html">Contact</a>
+<li><a href="contact.html">Contact</a></li>
+
+</ul>
 
 </nav>
-
-<div class="nav-cta">
-
-<a href="contact.html" class="btn btn-primary">
-
-Get Quote
-
-</a>
-
-<button class="nav-toggle">
-
-<span></span>
-
-<span></span>
-
-<span></span>
-
-</button>
 
 </div>
 
@@ -93,57 +92,50 @@ Get Quote
 
 </header>
 
-<!-- Banner -->
+<!-- PAGE HEADER -->
 
 <section class="page-header">
 
-<div class="container">
+<div class="container text-center">
 
-<h1>Products</h1>
+<span class="badge">
 
-<div class="breadcrumb">
+PRODUCT CATALOGUE
 
-<a href="index.html">Home</a>
+</span>
 
-/
+<h1>
 
-<span>Products</span>
+Our Products
 
-</div>
-
-</div>
-
-</section>
-
-<section>
-
-<div class="container">
-
-<div class="section-title">
-
-<span>OUR COLLECTION</span>
-
-<h2>Premium Hardware Products</h2>
+</h1>
 
 <p>
 
-Browse our complete catalogue of hardware, plumbing, electrical, paints and construction materials.
+Browse our collection of hardware, plumbing,
+electrical, paints and construction products.
 
 </p>
 
 </div>
 
-<!-- Search -->
+</section>
 
-<div class="hero-search" style="margin:40px auto;max-width:900px;">
+<!-- SEARCH -->
+
+<section class="bg-light">
+
+<div class="container">
+
+<div class="hero-search">
 
 <input
 
-id="productSearch"
-
 type="text"
 
-placeholder="Search products...">
+id="productSearch"
+
+placeholder="Search Products...">
 
 <button>
 
@@ -155,700 +147,170 @@ Search
 
 </div>
 
-<div style="display:grid;grid-template-columns:280px 1fr;gap:40px;">
-
-<!-- Sidebar -->
-
-<aside>
-
-<div class="feature-card">
-
-<h3>
-
-Categories
-
-</h3>
-
-<ul style="margin-top:20px;line-height:2.4;">
-
-<li><input type="checkbox"> Power Tools</li>
-
-<li><input type="checkbox"> Hand Tools</li>
-
-<li><input type="checkbox"> Plumbing</li>
-
-<li><input type="checkbox"> Electrical</li>
-
-<li><input type="checkbox"> Paints</li>
-
-<li><input type="checkbox"> Waterproofing</li>
-
-<li><input type="checkbox"> Fasteners</li>
-
-<li><input type="checkbox"> Sanitary</li>
-
-</ul>
-
-</div>
-
-<div class="feature-card" style="margin-top:30px;">
-
-<h3>
-
-Brands
-
-</h3>
-
-<ul style="margin-top:20px;line-height:2.4;">
-
-<li>Bosch</li>
-
-<li>Stanley</li>
-
-<li>Asian Paints</li>
-
-<li>Astral</li>
-
-<li>Supreme</li>
-
-<li>Dr. Fixit</li>
-
-<li>Finolex</li>
-
-<li>Berger</li>
-
-</ul>
-
-</div>
-
-</aside>
-
-<!-- Products -->
-
-<div>
-
-<div class="product-grid">
-    <!-- Product 1 -->
-
-<div class="product-card">
-
-<div class="product-image">
-
-<span class="sale-tag">BEST</span>
-
-<img src="assets/images/products/drill.png" alt="Bosch Drill">
-
-</div>
-
-<div class="product-body">
-
-<div class="product-category">POWER TOOLS</div>
-
-<h3 class="product-title">Bosch Rotary Hammer Drill</h3>
-
-<div class="product-price">₹7,999 <del>₹8,999</del></div>
-
-<div class="product-buttons">
-
-<a href="product-details.html" class="btn btn-primary">View</a>
-
-<a href="contact.html" class="btn btn-outline">Enquiry</a>
-
-</div>
-
-</div>
-
-</div>
-
-<!-- Product 2 -->
-
-<div class="product-card">
-
-<div class="product-image">
-
-<img src="assets/images/products/grinder.png">
-
-</div>
-
-<div class="product-body">
-
-<div class="product-category">POWER TOOLS</div>
-
-<h3 class="product-title">Angle Grinder</h3>
-
-<div class="product-price">₹3,499</div>
-
-<div class="product-buttons">
-
-<a href="product-details.html" class="btn btn-primary">View</a>
-
-<a href="contact.html" class="btn btn-outline">Enquiry</a>
-
-</div>
-
-</div>
-
-</div>
-
-<!-- Product 3 -->
-
-<div class="product-card">
-
-<div class="product-image">
-
-<img src="assets/images/products/pipe.png">
-
-</div>
-
-<div class="product-body">
-
-<div class="product-category">PLUMBING</div>
-
-<h3 class="product-title">Astral CPVC Pipe</h3>
-
-<div class="product-price">₹420</div>
-
-<div class="product-buttons">
-
-<a href="product-details.html" class="btn btn-primary">View</a>
-
-<a href="contact.html" class="btn btn-outline">Enquiry</a>
-
-</div>
-
-</div>
-
-</div>
-
-<!-- Product 4 -->
-
-<div class="product-card">
-
-<div class="product-image">
-
-<img src="assets/images/products/paint.png">
-
-</div>
-
-<div class="product-body">
-
-<div class="product-category">PAINTS</div>
-
-<h3 class="product-title">Asian Paints Apex</h3>
-
-<div class="product-price">₹2,350</div>
-
-<div class="product-buttons">
-
-<a href="product-details.html" class="btn btn-primary">View</a>
-
-<a href="contact.html" class="btn btn-outline">Enquiry</a>
-
-</div>
-
-</div>
-
-</div>
-
-<!-- Product 5 -->
-
-<div class="product-card">
-
-<div class="product-image">
-
-<img src="assets/images/products/tap.png">
-
-</div>
-
-<div class="product-body">
-
-<div class="product-category">SANITARY</div>
-
-<h3 class="product-title">Jaquar Pillar Cock</h3>
-
-<div class="product-price">₹1,850</div>
-
-<div class="product-buttons">
-
-<a href="product-details.html" class="btn btn-primary">View</a>
-
-<a href="contact.html" class="btn btn-outline">Enquiry</a>
-
-</div>
-
-</div>
-
-</div>
-
-<!-- Product 6 -->
-
-<div class="product-card">
-
-<div class="product-image">
-
-<img src="assets/images/products/wire.png">
-
-</div>
-
-<div class="product-body">
-
-<div class="product-category">ELECTRICAL</div>
-
-<h3 class="product-title">Finolex Copper Wire</h3>
-
-<div class="product-price">₹1,250</div>
-
-<div class="product-buttons">
-
-<a href="product-details.html" class="btn btn-primary">View</a>
-
-<a href="contact.html" class="btn btn-outline">Enquiry</a>
-
-</div>
-
-</div>
-
-</div>
-
-<!-- Product 7 -->
-
-<div class="product-card">
-
-<div class="product-image">
-
-<img src="assets/images/products/screw.png">
-
-</div>
-
-<div class="product-body">
-
-<div class="product-category">FASTENERS</div>
-
-<h3 class="product-title">Steel Screws Pack</h3>
-
-<div class="product-price">₹180</div>
-
-<div class="product-buttons">
-
-<a href="product-details.html" class="btn btn-primary">View</a>
-
-<a href="contact.html" class="btn btn-outline">Enquiry</a>
-
-</div>
-
-</div>
-
-</div>
-
-<!-- Product 8 -->
-
-<div class="product-card">
-
-<div class="product-image">
-
-<img src="assets/images/products/adhesive.png">
-
-</div>
-
-<div class="product-body">
-
-<div class="product-category">CHEMICALS</div>
-
-<h3 class="product-title">Fevicol Marine</h3>
-
-<div class="product-price">₹420</div>
-
-<div class="product-buttons">
-
-<a href="product-details.html" class="btn btn-primary">View</a>
-
-<a href="contact.html" class="btn btn-outline">Enquiry</a>
-
-</div>
-
-</div>
-
-</div>
-
-<!-- Product 9 -->
-
-<div class="product-card">
-
-<div class="product-image">
-
-<img src="assets/images/products/hammer.png">
-
-</div>
-
-<div class="product-body">
-
-<div class="product-category">HAND TOOLS</div>
-
-<h3 class="product-title">Claw Hammer</h3>
-
-<div class="product-price">₹399</div>
-
-<div class="product-buttons">
-
-<a href="product-details.html" class="btn btn-primary">View</a>
-
-<a href="contact.html" class="btn btn-outline">Enquiry</a>
-
-</div>
-
-</div>
-
-</div>
-
-<!-- Product 10 -->
-
-<div class="product-card">
-
-<div class="product-image">
-
-<img src="assets/images/products/pvc-tank.png">
-
-</div>
-
-<div class="product-body">
-
-<div class="product-category">WATER STORAGE</div>
-
-<h3 class="product-title">Supreme Water Tank</h3>
-
-<div class="product-price">₹5,999</div>
-
-<div class="product-buttons">
-
-<a href="product-details.html" class="btn btn-primary">View</a>
-
-<a href="contact.html" class="btn btn-outline">Enquiry</a>
-
-</div>
-
-</div>
-
-</div>
-<!-- Product 11 -->
-
-<div class="product-card">
-
-<div class="product-image">
-
-<img src="assets/images/products/cement.png" alt="Cement">
-
-</div>
-
-<div class="product-body">
-
-<div class="product-category">BUILDING MATERIAL</div>
-
-<h3 class="product-title">UltraTech Cement</h3>
-
-<div class="product-price">₹420</div>
-
-<div class="product-buttons">
-
-<a href="product-details.html" class="btn btn-primary">View</a>
-
-<a href="contact.html" class="btn btn-outline">Enquiry</a>
-
-</div>
-
-</div>
-
-</div>
-
-<!-- Product 12 -->
-
-<div class="product-card">
-
-<div class="product-image">
-
-<img src="assets/images/products/putty.png">
-
-</div>
-
-<div class="product-body">
-
-<div class="product-category">PAINTS</div>
-
-<h3 class="product-title">JK Wall Putty</h3>
-
-<div class="product-price">₹980</div>
-
-<div class="product-buttons">
-
-<a href="product-details.html" class="btn btn-primary">View</a>
-
-<a href="contact.html" class="btn btn-outline">Enquiry</a>
-
-</div>
-
-</div>
-
-</div>
-
-<!-- Product 13 -->
-
-<div class="product-card">
-
-<div class="product-image">
-
-<img src="assets/images/products/lock.png">
-
-</div>
-
-<div class="product-body">
-
-<div class="product-category">SECURITY</div>
-
-<h3 class="product-title">Godrej Door Lock</h3>
-
-<div class="product-price">₹1299</div>
-
-<div class="product-buttons">
-
-<a href="product-details.html" class="btn btn-primary">View</a>
-
-<a href="contact.html" class="btn btn-outline">Enquiry</a>
-
-</div>
-
-</div>
-
-</div>
-
-<!-- Product 14 -->
-
-<div class="product-card">
-
-<div class="product-image">
-
-<img src="assets/images/products/hinge.png">
-
-</div>
-
-<div class="product-body">
-
-<div class="product-category">FURNITURE FITTINGS</div>
-
-<h3 class="product-title">SS Door Hinges</h3>
-
-<div class="product-price">₹280</div>
-
-<div class="product-buttons">
-
-<a href="product-details.html" class="btn btn-primary">View</a>
-
-<a href="contact.html" class="btn btn-outline">Enquiry</a>
-
 </div>
 
-</div>
-
-</div>
-
-<!-- Product 15 -->
-
-<div class="product-card">
-
-<div class="product-image">
-
-<img src="assets/images/products/valve.png">
-
-</div>
-
-<div class="product-body">
-
-<div class="product-category">PLUMBING</div>
-
-<h3 class="product-title">Brass Ball Valve</h3>
-
-<div class="product-price">₹620</div>
-
-<div class="product-buttons">
-
-<a href="product-details.html" class="btn btn-primary">View</a>
-
-<a href="contact.html" class="btn btn-outline">Enquiry</a>
-
-</div>
-
-</div>
-
-</div>
-
-<!-- Product 16 -->
-
-<div class="product-card">
-
-<div class="product-image">
-
-<img src="assets/images/products/mcb.png">
-
-</div>
-
-<div class="product-body">
-
-<div class="product-category">ELECTRICAL</div>
-
-<h3 class="product-title">Havells MCB</h3>
-
-<div class="product-price">₹450</div>
-
-<div class="product-buttons">
-
-<a href="product-details.html" class="btn btn-primary">View</a>
-
-<a href="contact.html" class="btn btn-outline">Enquiry</a>
-
-</div>
-
-</div>
-
-</div>
-
-<!-- Product 17 -->
-
-<div class="product-card">
-
-<div class="product-image">
-
-<img src="assets/images/products/silicone.png">
-
-</div>
-
-<div class="product-body">
-
-<div class="product-category">SEALANTS</div>
-
-<h3 class="product-title">Silicone Sealant</h3>
+</section>
 
-<div class="product-price">₹320</div>
+<!-- CATEGORY FILTER -->
 
-<div class="product-buttons">
+<section>
 
-<a href="product-details.html" class="btn btn-primary">View</a>
+<div class="container">
 
-<a href="contact.html" class="btn btn-outline">Enquiry</a>
+<div class="product-buttons text-center">
 
-</div>
-
-</div>
-
-</div>
-
-<!-- Product 18 -->
-
-<div class="product-card">
-
-<div class="product-image">
-
-<img src="assets/images/products/wheelbarrow.png">
-
-</div>
-
-<div class="product-body">
-
-<div class="product-category">CONSTRUCTION</div>
-
-<h3 class="product-title">Wheel Barrow</h3>
-
-<div class="product-price">₹3800</div>
-
-<div class="product-buttons">
-
-<a href="product-details.html" class="btn btn-primary">View</a>
-
-<a href="contact.html" class="btn btn-outline">Enquiry</a>
-
-</div>
-
-</div>
-
-</div>
-
-<!-- Product 19 -->
+<button class="btn btn-outline active"
 
-<div class="product-card">
+data-filter="all">
 
-<div class="product-image">
+All
 
-<img src="assets/images/products/ladder.png">
+</button>
 
-</div>
-
-<div class="product-body">
-
-<div class="product-category">TOOLS</div>
-
-<h3 class="product-title">Aluminium Ladder</h3>
-
-<div class="product-price">₹4500</div>
-
-<div class="product-buttons">
-
-<a href="product-details.html" class="btn btn-primary">View</a>
-
-<a href="contact.html" class="btn btn-outline">Enquiry</a>
-
-</div>
-
-</div>
+<button class="btn btn-outline"
 
-</div>
-
-<!-- Product 20 -->
-
-<div class="product-card">
-
-<div class="product-image">
-
-<span class="sale-tag">NEW</span>
-
-<img src="assets/images/products/tile-adhesive.png">
+data-filter="Power Tools">
 
-</div>
+Power Tools
 
-<div class="product-body">
+</button>
 
-<div class="product-category">CHEMICALS</div>
+<button class="btn btn-outline"
 
-<h3 class="product-title">Tile Adhesive</h3>
+data-filter="Hand Tools">
 
-<div class="product-price">₹650</div>
+Hand Tools
 
-<div class="product-buttons">
+</button>
 
-<a href="product-details.html" class="btn btn-primary">View</a>
+<button class="btn btn-outline"
 
-<a href="contact.html" class="btn btn-outline">Enquiry</a>
-
-</div>
+data-filter="Plumbing">
 
-</div>
+Plumbing
 
-</div>
+</button>
 
-</div>
+<button class="btn btn-outline"
 
-<!-- Pagination -->
+data-filter="Electrical">
 
-<div style="display:flex;justify-content:center;gap:12px;margin-top:70px;">
+Electrical
 
-<a class="btn btn-primary">1</a>
+</button>
 
-<a class="btn btn-outline">2</a>
+<button class="btn btn-outline"
 
-<a class="btn btn-outline">3</a>
+data-filter="Paint">
 
-<a class="btn btn-outline">Next</a>
+Paint
 
-</div>
+</button>
 
 </div>
 
 </div>
 
 </section>
+
+<!-- PRODUCTS -->
+
+<section class="products">
+
+<div class="container">
+
+<div
+
+class="product-grid"
+
+data-product-render>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- CTA -->
+
+<section class="cta">
+
+<div class="container text-center">
+
+<h2>
+
+Can't Find The Product?
+
+</h2>
+
+<p>
+
+Contact us for bulk orders and special requirements.
+
+</p>
+
+<a
+
+href="contact.html"
+
+class="btn btn-white">
+
+Contact Us
+
+</a>
+
+</div>
+
+</section>
+
+<!-- FOOTER -->
+
+<footer class="footer">
+
+<div class="footer-bottom">
+
+<div class="container">
+
+<p>
+
+© 2026 Pawar Hardware
+
+</p>
+
+</div>
+
+</div>
+
+</footer>
+
+<!-- Floating -->
+
+<a
+
+href="https://wa.me/919226948412"
+
+class="whatsapp">
+
+<i class="fab fa-whatsapp"></i>
+
+</a>
+
+<a
+
+href="#"
+
+class="back-top">
+
+<i class="fa-solid fa-arrow-up"></i>
+
+</a>
+
+<!-- JS -->
+
+<script src="js/main.js"></script>
+
+<script src="js/products.js"></script>
+
+</body>
+
+</html>

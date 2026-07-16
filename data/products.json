@@ -1,1 +1,98 @@
-{} 
+[
+  {
+    "id": 1,
+    "name": "Bosch GSB 450 Impact Drill",
+    "category": "Power Tools",
+    "brand": "Bosch",
+    "image": "assets/products/bosch-gsb450.webp",
+    "description": "Compact impact drill suitable for home and professional work."
+  },
+  {
+    "id": 2,
+    "name": "Taparia Screwdriver Set",
+    "category": "Hand Tools",
+    "brand": "Taparia",
+    "image": "assets/products/taparia-set.webp",
+    "description": "Professional screwdriver kit."
+  },
+  {
+    "id": 3,
+    "name": "Astral PVC Pipe",
+    "category": "Plumbing",
+    "brand": "Astral",
+    "image": "assets/products/astral-pipe.webp",
+    "description": "High quality PVC plumbing pipe."
+  },
+  {
+    "id": 4,
+    "name": "Supreme Water Tank",
+    "category": "Water Storage",
+    "brand": "Supreme",
+    "image": "assets/products/supreme-tank.webp",
+    "description": "Durable overhead water storage tank."
+  },
+  {
+    "id": 5,
+    "name": "Asian Paints Tractor Emulsion",
+    "category": "Paint",
+    "brand": "Asian Paints",
+    "image": "assets/products/asian-tractor.webp",
+    "description": "Interior wall emulsion paint."
+  },
+  {
+    "id": 6,
+    "name": "Berger WeatherCoat",
+    "category": "Paint",
+    "brand": "Berger",
+    "image": "assets/products/berger-weathercoat.webp",
+    "description": "Exterior waterproof wall paint."
+  },
+  {
+    "id": 7,
+    "name": "Dr Fixit LW+",
+    "category": "Waterproofing",
+    "brand": "Dr Fixit",
+    "image": "assets/products/drfixit-lw.webp",
+    "description": "Integral waterproofing liquid."
+  },
+  {
+    "id": 8,
+    "name": "Havells Modular Switch",
+    "category": "Electrical",
+    "brand": "Havells",
+    "image": "assets/products/havells-switch.webp",
+    "description": "Premium modular electrical switch."
+  },
+  {
+    "id": 9,
+    "name": "Finolex House Wire",
+    "category": "Electrical",
+    "brand": "Finolex",
+    "image": "assets/products/finolex-wire.webp",
+    "description": "High quality copper electrical wire."
+  },
+  {
+    "id": 10,
+    "name": "Jaquar Bib Cock",
+    "category": "Bathroom",
+    "brand": "Jaquar",
+    "image": "assets/products/jaquar-bibcock.webp",
+    "description": "Premium brass bib cock."
+  },
+  {
+    "id": 11,
+    "name": "Stanley Measuring Tape",
+    "category": "Hand Tools",
+    "brand": "Stanley",
+    "image": "assets/products/stanley-tape.webp",
+    "description": "Heavy duty measuring tape."
+  },
+  {
+    "id": 12,
+    "name": "Bosch Angle Grinder",
+    "category": "Power Tools",
+    "brand": "Bosch",
+    "image": "assets/products/bosch-grinder.webp",
+    "description": "Professional angle grinder."
+  }
+]

@@ -1,0 +1,12 @@
+# ==========================================
+# PAWAR HARDWARE
+# robots.txt
+# ==========================================
+
+User-agent: *
+
+Allow: /
+
+Disallow: /data/
+
+Sitemap: https://www.pawarhardware.in/sitemap.xml
